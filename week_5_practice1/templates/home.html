@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+{% block content %}
+
+{% if messages %}
+{% for i in messages %}
+<p class = "bg-info text-white p-2">{{i}}</p>
+{% endfor %}
+{% endif %}
+
+<h1>Home Page</h1>
+{% endblock %}
